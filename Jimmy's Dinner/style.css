@@ -1,0 +1,271 @@
+* {
+    font-family: 'Smythe', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.shaded {
+    opacity: 80%;
+    filter: brightness(50%);
+}
+
+/* typography */
+.head-container {
+    color: white;
+    position: relative;
+}
+
+.head-container h1 {
+    letter-spacing: 2px;
+    margin-bottom: 0.7rem;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.head-container p {
+    letter-spacing: 1px;
+    font-size: 23px;
+}
+
+.dish-emoji {
+    font-size: 4rem;
+}
+
+.dish-description-text h3 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.dish-description-text p {
+    color: #8B8B8B;
+    margin-bottom: 1rem;
+}
+
+.dish-description-text h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.your-order-container {
+    font-size: 28px;
+}
+
+.your-order-container h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.payment-container-content h3,
+.payment-container-content input,
+.payment-container-content button {
+    font-family: sans-serif;
+}
+
+/* space */
+
+.main-container {
+    margin: 0 auto;
+    border-radius: 2%;
+    background: white;
+    max-width: 600px;
+    min-height: 1000px;
+}
+
+.head-container {
+    max-width: 600px;
+    height: 170px;
+    background-image: url(./images/rsz_3burgerbackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-box {
+    width: 510px;
+    height: 170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-container {
+    margin: 2rem 0;
+}
+
+.dish-container {
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 510px;
+    height: 100px;
+    border-bottom: 1px solid #D2D2D2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dish-description {
+    display: flex;
+}
+
+.dish-emoji {
+    margin-right: 2rem;
+}
+
+.dish-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    border: 1px solid #DEDEDE;
+    background: none;
+}
+
+/* pricing contaier */
+
+.your-order-container {
+    margin: 1.5rem auto;
+    width: 500px;
+    height: 300px;
+}
+
+.your-order-item-price-container {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #393333;
+    display: flex;
+    flex-direction: column;
+}
+
+.yourOrder-item-price,
+.total-price-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.total-price-container {
+    margin-top: 2rem;
+}
+
+.complete-order-button {
+    display: block;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 15px;
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+    border: none;
+    background: #16DB99;
+    border-radius: 2%;
+    margin-top: 2rem;
+}
+
+.payment-container {
+    width: 500px;
+    height: 450px;
+    border-radius: 4px;
+    background: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.payment-container-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-container-content h3 {
+    margin-top: 3rem;
+    font-size: 24px;
+    margin-bottom: 3rem;
+}
+
+.payment-container-content input {
+    font-size: 15px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.payment-container-content button {
+    width: 100%;
+    background: #16DB99;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2rem;
+    color: white;
+}
+
+.final-message {
+    text-align: center;
+    width: 500px;
+    height: 120px;
+    padding-top: 40px;
+    background: #ECFDF5;
+    color: #065F46;
+    font-size: 28px;
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+/* hovers and animations */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* .dish-container:hover {
+    background: rgba(221, 220, 220, 0.133);
+} */
+
+.dish-button:hover {
+    background: rgba(92, 91, 91, 0.133);
+}
+
+.complete-order-button:hover,
+#submit:hover {
+    background: #13bb83;
+}
